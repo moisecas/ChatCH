@@ -83,6 +83,87 @@
         width: 65%;
         height: 80%;
         display: flex;
+        overflow: hidden;
+
+        .sidebar{
+            flex: 1;
+            background-color: #a7a7a7;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: #a7a7a7;
+                height: 50px;
+                padding: 10px;
+                justify-content: space-between;
+                color: azure;
+
+                .logo{
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .users{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        background-color: #a7a7a7;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    button{
+                        background-color: azure;
+                        color: #a7a7a7;
+                        font-size: 10px;
+                        border: none;
+                        cursor: pointer; 
+
+                    }
+                }
+                }
+                .search{
+                    border-bottom: #a7a7a7 solid 1px;
+                    .searchForm{
+                        padding: 10px;
+
+                        input{
+                            background-color: transparent;
+                            border: none;
+                            color: white;
+
+                        }
+                    }
+                }
+                .userChat{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: white;
+                    cursor: pointer; 
+
+                    &:hover{
+                        background-color: brown; 
+                    }
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+            }
+
+
+        }
+        .chat{
+            flex: 2; 
+        }
 
     }
-}
